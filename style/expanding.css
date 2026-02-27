@@ -23,5 +23,8 @@ body {
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    
 
 }
