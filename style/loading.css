@@ -1,5 +1,4 @@
-
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -11,7 +10,7 @@ body {
     margin: 0;
 }
 
-.loading-text {
+.loading-text{
     font-size: 50px;
     opacity: 1;
 }
@@ -23,7 +22,6 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     z-index: -1;
     filter: blur(100px);
 }
