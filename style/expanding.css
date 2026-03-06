@@ -1,20 +1,18 @@
-* {
+*{
     box-sizing: border-box;
 }
 
-body {
+body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-
 }
 
 .container {
     display: flex;
     width: 90vw;
-    background: white;
 }
 
 .panel {
@@ -27,11 +25,11 @@ body {
     cursor: pointer;
     flex: 1;
     margin: 10px;
-    Position: relative;
+    position: relative;
     transition: flex 1s ease-in;
 }
 
- h3 {
+h3 {
     position: absolute;
     bottom: 20px;
     left: 20px;
