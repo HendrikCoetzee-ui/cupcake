@@ -1,12 +1,16 @@
 clickBox = document.querySelector('.click')
 spinBox = document.querySelector('.spin')
-moveBox = document.querySelector('.move')
+translateBox = document.querySelector('.keydown');
 hoverBox = document.querySelector('.hover')
-dblclickBox = document.querySelector('.dblclick')
+dblclickBox = document.querySelector('.dbclick')
+
+
 colors = ['blue', 'green', 'purple', 'red']
 index = 0
+
+
 clickBox.addEventListener('click', () => {
-    clickBox.style.background = 'colors[index]'
+    clickBox.style.background = colors[index]
     index = index + 1
     if (index == colors.length) {
         index = 0
@@ -14,34 +18,47 @@ clickBox.addEventListener('click', () => {
     clickBox.style.color = 'white'
 })
 
-document.addEventListener('keydown', (event) => {
-    if (event.key == 'ArrowRight') {
-        x = x + 10
-    }
-    if (event.key == 'ArrowUp') {
-        y = y - 10
-    }
-    if (event.key == 'ArrowLeft') {
-        x = x - 10
-    }
-    if (event.key == 'ArrowDown') {
-        y = y + 10
-    }
-    moveBox.style.transform = 'translate(${x}px, ${y}px)'
+
+spinBox.addEventListener('click', () => {
+    spinBox.classList.toggle('start')
 })
+
+
+let positionY = 50;
+let positionX = 50;
+
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'ArrowDown') {
+        positionY = positionY - 10;
+    } else if (event.key == 'ArrowUp') {
+        positionY = positionY + 10;
+    } else if (event.key == 'ArrowRight') {
+        positionX = positionX + 10;
+    } else if (event.key == 'ArrowLeft') {
+        positionX = positionX - 10;
+    }
+
+
+    translateBox.style.bottom = `${positionY}px`;
+    translateBox.style.left = `${positionX}px`;
+});
+
 
 hoverBox.addEventListener('mouseenter', () => {
-    hoverBox.style.transform = "scale(3)"
-    //hoverBox.style.height = "20px"
-    //hoverBox.style.width = "100px"
+    hoverBox.style.height = "200px"
+    hoverBox.style.width = "500px"
 })
+
 
 hoverBox.addEventListener('mouseleave', () => {
-    hoverBox.style.transform = "scale(1)"
-   //hoverBox.style.height = "60px"
-   //hoverbox.style.width = "250px"
+    hoverBox.style.height = "100px"
+    hoverBox.style.width = "250px"
 })
 
-dblclickBox.addEventListener("dblclick", () => {
-    
+
+
+
+dblclickBox.addEventListener('dblclick', () => {
+    dblclickBox.classList.toggle('fade')
 })

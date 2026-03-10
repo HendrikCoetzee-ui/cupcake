@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
 
 .rectangle {
     height: 60px;
@@ -22,26 +14,40 @@ body {
     align-items: center;
 }
 
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
 .click {
     position: absolute;
-    top: 20px;
+    top: 50px;
     left: 50px;
 }
-.move {
+
+
+.keydown {
     position: absolute;
-    bottom: 20px;
     left: 50px;
+    bottom: 50px;
 }
+
 
 .hover {
     position: absolute;
-    top: 20px;
+    top: 50px;
     right: 50px;
 }
 
-.dblclick {
+
+.dbclick {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     right: 50px;
 }
 
@@ -50,10 +56,18 @@ body {
     animation: spin 1s linear infinite;
 }
 
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
