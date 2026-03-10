@@ -1,7 +1,11 @@
+const colors = ['red', 'blue', 'yellow', 'green', 'pink', 'orange', 'purple', 'brown',]
+let index = 0;
 
 function changeColor() {
-    const colors = ['red', 'blue', 'yellow', 'green', 'pink', 'orange', 'purple', 'brown',]
+    document.body.style.backgroundColor = colors[index];
+    index++;
 
-
+    if (index === colors.length) {
+        index = 0;
+    }
 }
-
