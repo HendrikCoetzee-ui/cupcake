@@ -1,4 +1,4 @@
-const colors = ['red', 'blue', 'yellow', 'green', 'pink', 'orange', 'purple', 'brown',]
+const colors = ['red', 'blue', 'yellow', 'green', 'pink', 'orange', 'purple', 'brown', ]
 let index = 0;
 
 function changeColor() {
