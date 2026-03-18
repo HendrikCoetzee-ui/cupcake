@@ -11,5 +11,6 @@ for (let i = 0; i < choose_insect_btns.length; i = i + 1)
 {
     choose_insect_btn[i].addEventListener('click', () => {
         screens[1].classList.add('up')
+        img = choose_insect_btns[i].querySelector
     })
 }
