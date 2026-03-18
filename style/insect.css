@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: "Press Start 2P", system-ui;
     background: #516dff;
     color: #ffffff;
     height: 100vh;
