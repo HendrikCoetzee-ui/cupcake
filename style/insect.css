@@ -44,6 +44,11 @@ h1 {
     opacity: 0.9;
 }
 
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .choose-insect-btn img {
     width: 100px;
     height: 100px;
