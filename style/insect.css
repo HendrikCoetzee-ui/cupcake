@@ -14,6 +14,8 @@ body {
     text-align: center;
 }
 
+
+
 .screen {
     height: 100vh;
     width: 100vw;
@@ -58,6 +60,16 @@ h1 {
 
 .choose-insect-btn {
     background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    
+}
+
+.choose-insect-btn:hover {
+    background: #ffffff;
+    color: #516dff;
+
 }
 
 .choose-insect-btn img {
