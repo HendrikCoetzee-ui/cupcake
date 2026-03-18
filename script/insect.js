@@ -14,6 +14,15 @@ for (let i = 0; i < choose_insect_btns.length; i = i + 1)
         img = choose_insect_btns[i].querySelector('img')
         src = img.getAttribute('src')
         alt = img.getAttribute('alt')
-        console.log(src)
+        startGame()
     })
+}
+
+
+function startGame() {
+    setTimeout(createInsect, 1000)
+}
+
+function createInsect() {
+    
 }
