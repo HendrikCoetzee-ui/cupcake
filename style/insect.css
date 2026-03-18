@@ -99,3 +99,17 @@ h1 {
     top: 20px;
     right: 20px;
 }
+
+.message {
+    line-height: 1.7;
+    background: #000000;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+}
+
+.message.visible {
+    opacity: 1;
+}
