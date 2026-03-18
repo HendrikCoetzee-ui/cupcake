@@ -5,5 +5,11 @@
 
 body {
     background: #516dff;
-    
+    color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
 }
+
+
