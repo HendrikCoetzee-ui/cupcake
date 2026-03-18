@@ -50,7 +50,10 @@ h1 {
     justify-content: center;
     list-style-type: none;
     padding: 0px;
-    
+}
+
+.insects-list li {
+    margin: 10px;
 }
 
 .choose-insect-btn img {
