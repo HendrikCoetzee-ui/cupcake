@@ -1,7 +1,7 @@
 screens = document.querySelectorAll('.screen')
 choose_insect_btns = document.querySelectorAll('.choose-insect-btn')
 start_btn = document.getElementById('start-btn')
-
+game_container = document.querySelector('.game-container')
 
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
@@ -24,5 +24,7 @@ function startGame() {
 }
 
 function createInsect() {
-    
+    insect = document.createElement('div')
+    insect.innerHTML = "<img src="images/fly.png" alt="Fly">"
+    game_container.appendChild(insect)
 }
