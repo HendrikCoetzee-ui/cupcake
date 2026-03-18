@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -31,6 +32,7 @@ h1 {
     color: #516dff;
     padding: 15px 20px;
     cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
 }
 
 .btn:hover {
