@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -20,6 +20,7 @@ a {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 
 a:hover {
@@ -29,9 +30,13 @@ a:hover {
 button {
     padding: 8px;
     margin-top: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    text decoration: none;
+    border-radius: 15px;
 }
 
-/* Dark mode */
 .dark {
     background-color: #222222;
     color: white;
