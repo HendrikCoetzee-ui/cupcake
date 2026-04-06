@@ -131,3 +131,21 @@ body {
     line-height: 30px;
     letter-spacing: 1.2px;
 }
+
+.home-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000; /* stays on top */
+}
+
+.home-btn:hover {
+    background-color: #555;
+}

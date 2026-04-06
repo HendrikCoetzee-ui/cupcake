@@ -1,5 +1,4 @@
 buttons = document.querySelector('.buttons')
-
 sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
 for (let i = 0; i < 6; i = i + 1) {
@@ -18,4 +17,8 @@ function stopSongs() {
         document.querySelector(`.${sounds[i]}`).pause()
         document.querySelector(`.${sounds[i]}`).curremtTime = 0
     }
+}
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
 }

@@ -9,3 +9,7 @@ function changeColor() {
         index = 0;
     }
 }
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
+}

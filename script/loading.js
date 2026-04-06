@@ -15,3 +15,7 @@ function blurring() {
         clearInterval(int)
     }
 }
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
+}

@@ -14,3 +14,7 @@ function removeActiveFromAllPanels() {
         panels[i].classList.remove('active')
     }
 }
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
+}

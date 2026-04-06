@@ -62,3 +62,7 @@ hoverBox.addEventListener('mouseleave', () => {
 dblclickBox.addEventListener('dblclick', () => {
     dblclickBox.classList.toggle('fade')
 })
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
+}

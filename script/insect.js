@@ -97,3 +97,7 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
 }
+
+function goHome() {
+    window.location.href = "index.html"; // Redirect to homepage
+}
