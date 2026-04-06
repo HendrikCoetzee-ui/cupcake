@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: lightgray;
+}
+
+a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    background-color: darkblue;
+}
+
+button {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* Dark mode */
+.dark {
+    background-color: black;
+    color: white;
+}
