@@ -9,10 +9,11 @@ colors = ['blue', 'green', 'purple', 'red']
 index = 0
 
 
-clickBox.addEventListener('click', () => {
+clickBox.addEventListener('click',() => {
     clickBox.style.background = colors[index]
     index = index + 1
-    if (index == colors.length) {
+    if (index == colors.length)
+    {
         index = 0
     }
     clickBox.style.color = 'white'
@@ -31,36 +32,33 @@ let positionX = 50;
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowDown') {
         positionY = positionY - 10;
-    } else if (event.key == 'ArrowUp') {
+    }
+    else if (event.key == 'ArrowUp') {
         positionY = positionY + 10;
-    } else if (event.key == 'ArrowRight') {
+    }
+    else if (event.key == 'ArrowRight') {
         positionX = positionX + 10;
-    } else if (event.key == 'ArrowLeft') {
+    }
+    else if (event.key == 'ArrowLeft') {
         positionX = positionX - 10;
     }
-
 
     translateBox.style.bottom = `${positionY}px`;
     translateBox.style.left = `${positionX}px`;
 });
-
 
 hoverBox.addEventListener('mouseenter', () => {
     hoverBox.style.height = "200px"
     hoverBox.style.width = "500px"
 })
 
-
 hoverBox.addEventListener('mouseleave', () => {
     hoverBox.style.height = "100px"
     hoverBox.style.width = "250px"
 })
 
-
-
-
 dblclickBox.addEventListener('dblclick', () => {
-    dblclickBox.classList.toggle('fade')
+ dblclickBox.classList.toggle('fade')
 })
 
 function goHome() {

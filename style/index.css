@@ -8,6 +8,9 @@ body {
     font-family: "Black Ops One", system-ui;
     text-align: center;
     background-color: lightgray;
+     height: 100vh;
+     width: 100vw;
+     overflow-x: hidden;
 }
 
 a {
